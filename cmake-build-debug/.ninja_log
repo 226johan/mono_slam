@@ -1,4 +1,22 @@
 # ninja log v5
-0	1076	1725283582202394339	CMakeFiles/mono_slam.dir/main.cpp.o	1a7a8d0d1e4943db
-1	33	1725364739480135305	build.ninja	7e344c671ec828ab
-1076	1276	1725283582402381612	mono_slam	1adfbfa7c7950f6e
+1	2388	1725375534177117105	CMakeFiles/mono_slam.dir/src/map.cpp.o	d288c776e88045ef
+1	1419	1725375509219158616	CMakeFiles/mono_slam.dir/src/camera.cpp.o	9c6acc14d6ba3063
+0	1161	1725375315269238861	CMakeFiles/mono_slam.dir/main.cpp.o	1a7a8d0d1e4943db
+0	17	1725375592701070322	build.ninja	7e344c671ec828ab
+1	1078	1725375508879073494	CMakeFiles/mono_slam.dir/src/mappoint.cpp.o	b866cc35cf456a68
+2388	2662	1725375534453179868	mono_slam	1b46d181b96a4c76
+1	1003	1725375508807055425	CMakeFiles/mono_slam.dir/src/feature.cpp.o	90dec356c1e199ea
+1	1180	1725375532972842396	CMakeFiles/mono_slam.dir/src/frame.cpp.o	e25349a949e50fbf
+0	19	1725375592701070322	build.ninja	7e344c671ec828ab
+2	1118	1725375671421522149	CMakeFiles/mono_slam.dir/src/mappoint.cpp.o	b866cc35cf456a68
+1	1223	1725375671525536308	CMakeFiles/mono_slam.dir/src/frame.cpp.o	e25349a949e50fbf
+1	1405	1725375671705560812	CMakeFiles/mono_slam.dir/src/camera.cpp.o	9c6acc14d6ba3063
+2	1468	1725375671769569524	CMakeFiles/mono_slam.dir/src/feature.cpp.o	90dec356c1e199ea
+2	2503	1725375672801709616	CMakeFiles/mono_slam.dir/src/map.cpp.o	d288c776e88045ef
+2503	2747	1725375673045742689	mono_slam	1b46d181b96a4c76
+1	1066	1725375825069531154	CMakeFiles/mono_slam.dir/src/mappoint.cpp.o	b866cc35cf456a68
+1	1240	1725375825241544553	CMakeFiles/mono_slam.dir/src/frame.cpp.o	e25349a949e50fbf
+1	1435	1725375825437559821	CMakeFiles/mono_slam.dir/src/camera.cpp.o	9c6acc14d6ba3063
+1	1480	1725375825481563250	CMakeFiles/mono_slam.dir/src/feature.cpp.o	90dec356c1e199ea
+1	2506	1725375826505642886	CMakeFiles/mono_slam.dir/src/map.cpp.o	d288c776e88045ef
+2506	2742	1725375826741661205	mono_slam	1b46d181b96a4c76

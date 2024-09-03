@@ -69,4 +69,4 @@ namespace mono_slam {
     {
         return camera2pixel(world2camera(p_w, T_c_w));
     }
-}
+}   // namespace mono_slam

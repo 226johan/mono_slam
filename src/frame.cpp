@@ -27,4 +27,4 @@ namespace mono_slam {
         is_keyframe_=true;
         keyframe_id_=keyframe_factory_id++;
     }
-}
+}   // namespace mono_slam

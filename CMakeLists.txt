@@ -32,6 +32,8 @@ if(NOT Glog_FOUND)
 endif()
 include_directories(${GLOG_INCLUDE_DIRS})
 
+#find_package(GOOGLE REQUIRED)
+
 add_executable(mono_slam main.cpp
         include/frame.h
         include/common_include.h
@@ -41,7 +43,11 @@ add_executable(mono_slam main.cpp
         src/frame.cpp
         include/feature.h
         src/feature.cpp
-        include/mappoint.h)
+        include/mappoint.h
+        src/mappoint.cpp
+        include/map.h
+        src/map.cpp
+)
 
 target_link_libraries(mono_slam
         ${OpenCV_LIBS}

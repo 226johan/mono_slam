@@ -6,4 +6,4 @@
 
 namespace mono_slam {
 
-}
+}   // namespace mono_slam

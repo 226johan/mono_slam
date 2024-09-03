@@ -16,6 +16,7 @@ namespace mono_slam {
     /**
      * 帧
      * 每一帧分配独立id,关键帧分配关键帧id
+     * @author johan
      */
     struct Frame {
         public:
@@ -57,7 +58,7 @@ namespace mono_slam {
 
             // 工厂构建模式,分配id
             static std::shared_ptr<Frame> CreateFrame();
-            }
+
 
 
     };

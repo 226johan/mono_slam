@@ -7,6 +7,10 @@
 
 #include "common_include.h"
 namespace mono_slam {
+    /*
+     * 相机类
+     * @author johan
+     */
     class Camera {
     public:
         EIGEN_MAKE_ALIGNED_OPERATOR_NEW;     // 确保eigen动态分配的内存对齐\

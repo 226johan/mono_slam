@@ -1,0 +1,4 @@
+/home/johan/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/johan/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/johan/slam/mono_slam -B /home/johan/slam/mono_slam/cmake-build-debug
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/johan/slam/mono_slam/cmake-build-debug

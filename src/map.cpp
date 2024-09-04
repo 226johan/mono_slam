@@ -6,6 +6,11 @@
 #include"../include/feature.h"
 
 namespace mono_slam {
+    /**
+     * 构造函数
+     * @param frame    当前帧
+     * @param num_active_keyframes  最大活动关键帧数量
+     */
     void Map::InsertKeyframe(Frame::Ptr frame) {
         // 更新当前帧 表示当前处理的关键帧
         current_frame_ = frame;
@@ -25,6 +30,10 @@ namespace mono_slam {
         }
     }
 
+    /**
+     * 插入地图点
+     * @param map_point  地图点
+     */
     void Map::InsertMapPoint(MapPoint::Ptr map_point) {
         // 检查地图点是否已经存在
         if(landmarks_.find(map_point->id_) == landmarks_.end()){
@@ -39,6 +48,9 @@ namespace mono_slam {
 
     }
 
+    /**
+     * 删除旧的关键帧
+     */
     void Map::RemoveOldKeyFrame() {
         if(current_frame_ == nullptr) return;
         // 寻找与当前帧距离最近和最远的两个关键帧
@@ -61,6 +73,7 @@ namespace mono_slam {
             }
         }
 
+        // 确定要删除的关键帧
         const double min_dis_th = 0.2;  // 距离阈值
         Frame::Ptr frame_to_remove = nullptr;
         if(max_dis < min_dis_th){
@@ -73,6 +86,44 @@ namespace mono_slam {
 
 //        LOG(INFO) << "Remove old keyframe: " << frame_to_remove->keyframe_id_;
 
+        // 删除关键帧 更新相关数据
 
+        // 删除选定关键帧
+        active_keyframes_.erase(frame_to_remove->keyframe_id_);
+        // 如果特征点对应的地图点存在,移除该特征点的观测
+        for(auto feat : frame_to_remove->features_left_){
+            auto mp = feat->map_point_.lock();
+            if(mp){
+                mp->RemoveObservation(feat);
+            }
+        }
+        for(auto feat : frame_to_remove->features_right_){
+            if(feat==nullptr) return;
+            auto mp = feat->map_point_.lock();
+            if(mp){
+                mp->RemoveObservation(feat);
+            }
+        }
+        // 清理地图中无效地图点
+        CleanMap();
     }
-}
+
+    /**
+     * 清理地图
+     */
+    void Map::CleanMap() {
+        // 记录移除的地图点数量
+        int cnt_landmark_removed = 0;
+
+        for(auto iter =active_landmarks_.begin(); iter != active_landmarks_.end();){
+            // 如果当前地图点的观测点的次数为0,则移除
+            if(iter->second->observed_times_ == 0){
+                iter = active_landmarks_.erase(iter);
+                cnt_landmark_removed++;
+            } else{
+                ++iter;
+            }
+        }
+//        LOG(INFO) << "Removed " << cnt_landmark_removed << " active landmarks";
+    }
+}  // namespace mono_slam

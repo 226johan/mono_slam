@@ -13,7 +13,7 @@ namespace mono_slam {
      */
     class Camera {
     public:
-        EIGEN_MAKE_ALIGNED_OPERATOR_NEW;     // 确保eigen动态分配的内存对齐\
+        EIGEN_MAKE_ALIGNED_OPERATOR_NEW;     // 确保eigen动态分配的内存对齐
         typedef std::shared_ptr<Camera> Ptr;
 
         double fx_=0, fy_=0, cx_=0, cy_=0, baseline_=0; // 相机内参

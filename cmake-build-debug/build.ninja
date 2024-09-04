@@ -91,6 +91,13 @@ build CMakeFiles/mono_slam.dir/src/map.cpp.o: CXX_COMPILER__mono_slam_unscanned_
   OBJECT_DIR = CMakeFiles/mono_slam.dir
   OBJECT_FILE_DIR = CMakeFiles/mono_slam.dir/src
 
+build CMakeFiles/mono_slam.dir/src/frontend.cpp.o: CXX_COMPILER__mono_slam_unscanned_Debug /home/johan/slam/mono_slam/src/frontend.cpp || cmake_object_order_depends_target_mono_slam
+  DEP_FILE = CMakeFiles/mono_slam.dir/src/frontend.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/usr/local/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/mono_slam.dir
+  OBJECT_FILE_DIR = CMakeFiles/mono_slam.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target mono_slam
@@ -99,7 +106,7 @@ build CMakeFiles/mono_slam.dir/src/map.cpp.o: CXX_COMPILER__mono_slam_unscanned_
 #############################################
 # Link the executable mono_slam
 
-build mono_slam: CXX_EXECUTABLE_LINKER__mono_slam_Debug CMakeFiles/mono_slam.dir/main.cpp.o CMakeFiles/mono_slam.dir/src/camera.cpp.o CMakeFiles/mono_slam.dir/src/frame.cpp.o CMakeFiles/mono_slam.dir/src/feature.cpp.o CMakeFiles/mono_slam.dir/src/mappoint.cpp.o CMakeFiles/mono_slam.dir/src/map.cpp.o | /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0
+build mono_slam: CXX_EXECUTABLE_LINKER__mono_slam_Debug CMakeFiles/mono_slam.dir/main.cpp.o CMakeFiles/mono_slam.dir/src/camera.cpp.o CMakeFiles/mono_slam.dir/src/frame.cpp.o CMakeFiles/mono_slam.dir/src/feature.cpp.o CMakeFiles/mono_slam.dir/src/mappoint.cpp.o CMakeFiles/mono_slam.dir/src/map.cpp.o CMakeFiles/mono_slam.dir/src/frontend.cpp.o | /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0 /usr/local/lib/libopencv_world.so.4.7.0
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0  /usr/local/lib/libopencv_world.so.4.7.0
   OBJECT_DIR = CMakeFiles/mono_slam.dir

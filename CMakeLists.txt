@@ -47,6 +47,13 @@ add_executable(mono_slam main.cpp
         src/mappoint.cpp
         include/map.h
         src/map.cpp
+        include/frontend.h
+        src/frontend.cpp
+        include/algorithm.h
+        include/backend.h
+        include/config.h
+        include/g2o_types.h
+        include/viewer.h
 )
 
 target_link_libraries(mono_slam
